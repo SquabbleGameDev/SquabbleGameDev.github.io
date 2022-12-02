@@ -1,0 +1,50 @@
+h {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: Open Sans, sans-serif;
+}
+
+h5 {
+    font-style: italic;
+    color: #636E72;
+    margin-bottom: 0%;
+    margin-top: 1.5em;
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+.imgIcon {
+    width: 1.5em;
+}
+
+.caption {
+    color: #636E72;
+    font-size: 1rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.tagbutton {
+    margin: em;
+}
+
+.changeNumFont {
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.textBlack {
+    color: red;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
