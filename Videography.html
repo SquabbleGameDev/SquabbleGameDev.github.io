@@ -9,19 +9,16 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="portfolio_css.css" />
     <style>
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .columnPhoto {
-                flex: 50%;
-                max-width: 50%;
-            }
+        .video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
         }
 
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .columnPhoto {
-                flex: 100%;
-                max-width: 100%;
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 420px) {
+            .video {
+                aspect-ratio: 9 / 16;
+                width: 100%;
             }
         }
     </style>
@@ -69,7 +66,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
                                     <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
-                                        href="">Videography</a>
+                                        href="/Videography.html">Videography</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
@@ -87,10 +84,11 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid pt-5 p-0 m-0 title">
-        <iframe class="video" src="https://www.youtube.com/watch?v=V9_ZpqfqHFI&ab_channel=Ado" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 
+
+    <div class="container-fluid pt-5 p-0 m-0 title fade-in-bottom">
+        <iframe class="video" src="https://www.youtube.com/embed/Bm9t7c4uKco" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
     </div>
 
 
