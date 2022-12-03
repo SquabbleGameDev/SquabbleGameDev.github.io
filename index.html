@@ -9,6 +9,28 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="portfolio_css.css" />
     <style>
+        .containerT {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hidden {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: hidden;
+            height: 100vh;
+            width: auto;
+        }
+
         .display-sm-none {
             display: none;
         }
@@ -26,19 +48,8 @@
                 display: none;
             }
 
-        }
 
-        .containerT {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
 
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
     </style>
     <title>Nathan Lee</title>
@@ -78,14 +89,17 @@
     </div>
 
 
+
     <div class="col">
         <div data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-smooth-scroll="true"
             class="scrollspy-example" tabindex="0">
             <!-- Game Design -->
             <h4 id="scroll-GameDesign"></h4>
             <div class="containerT" style="margin-bottom: 0em;">
-                <img src="/TOW/TOW_Background_00.jpg" class="img-fluid" alt="..." />
-                <div class="centered">Game Design</div>
+                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
+                <div class="centered">Game Design
+                    <h1>THE OUTSIDE WORLD</h1>
+                </div>
             </div>
             </h4>
             <h5>About the project</h5>
