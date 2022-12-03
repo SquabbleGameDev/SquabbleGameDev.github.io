@@ -9,6 +9,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="portfolio_css.css" />
     <style>
+        .textAlignRight {
+            text-align: right;
+        }
+
         .containerT {
             position: relative;
             text-align: center;
@@ -20,6 +24,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            text-align: left;
         }
 
         .hidden {
@@ -57,9 +68,9 @@
 
 <body>
     <!-- Nav Bar -->
-    <ul class="nav fixed-bottom flex-column navbar-dark">
+    <ul class="nav fixed-bottom flex-column navbar-dark textAlignRight">
         <li class="nav-item">
-            <a class="nav-link active textBlack" aria-current="page" href="#">Home</a>
+            <a class="nav-link active textBlack " aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link textBlack" href="#scroll-GameDesign">Game Design</a>
@@ -68,7 +79,7 @@
             <a class="nav-link textBlack" href="#scroll-WebDesign">Web Design</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link textBlack" href="#scroll-UI&UX_Design">UI Design</a>
+            <a class="nav-link textBlack" href="#scroll-UIDesign">UI Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link textBlack" href="#scroll-MoreWorks">More Works</a>
@@ -100,99 +111,51 @@
                 <div class="centered">Game Design
                     <h1>THE OUTSIDE WORLD</h1>
                 </div>
+                <div class="bottom-left">
+                    <a href="" class="caption">Read More</a>
+
+                </div>
             </div>
-            </h4>
-            <h5>About the project</h5>
-            <h2>THE OUTSIDE WORLD</h2>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-            <h4>My Contribution</h4>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
 
-            <a href="" class="caption">Read More</a>
-
-            <img class="imgIcon" src="/Intern_Portfolio/Icon/ArrowDown_Grey.png" alt="" />
-            </p>
 
 
             <!-- Web Design -->
-            <h4 id="scroll-WebDesign">Web Design</h4>
-            <div class="container-fluid p-0" style="margin-bottom: 0em">
-                <img src="/Intern_Portfolio/TOW/TOW_Background_00.jpg" class="img-fluid" alt="..." />
+            <h4 id="scroll-WebDesign"></h4>
+            <div class="containerT" style="margin-bottom: 0em;">
+                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
+                <div class="centered">Web Design
+                    <h1>MY PORTFOLIO</h1>
+                </div>
+                <div class="bottom-left">
+                    <a href="" class="caption">Read More</a>
+
+                </div>
             </div>
-            <h5>About the project</h5>
-            <h2>THE OUTSIDE WORLD</h2>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-            <h4>My Contribution</h4>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-
-            <a href="" class="caption">Read More</a>
-
-            <img class="imgIcon" src="/Intern_Portfolio/Icon/ArrowDown_Grey.png" alt="" />
-            </p>
 
             <!-- UI Design -->
-            <h4 id="scroll-UI&UX_Design">UI & UX Design</h4>
-            <div class="container-fluid p-0" style="margin-bottom: 0em">
-                <img src="/Intern_Portfolio/TOW/TOW_Background_00.jpg" class="img-fluid" alt="..." />
+            <h4 id="scroll-MoreWorks"></h4>
+            <div class="containerT" style="margin-bottom: 0em;">
+                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
+                <div class="centered">UI Design
+                    <h1>TARCApp</h1>
+                </div>
+                <div class="bottom-left">
+                    <a href="" class="caption">Read More</a>
+
+                </div>
             </div>
-            <h5>About the project</h5>
-            <h2>THE OUTSIDE WORLD</h2>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-            <h4>My Contribution</h4>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-
-            <a href="" class="caption">Read More</a>
-
-            <img class="imgIcon" src="/Intern_Portfolio/Icon/ArrowDown_Grey.png" alt="" />
-            </p>
-
             <!-- More Works -->
-            <h4 id="scroll-MoreWorks">More Works</h4>
-            <div class="container-fluid p-0" style="margin-bottom: 0em">
-                <img src="/Intern_Portfolio/TOW/TOW_Background_00.jpg" class="img-fluid" alt="..." />
+            <h4 id="scroll-MoreWorks"></h4>
+            <div class="containerT" style="margin-bottom: 0em;">
+                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
+                <div class="centered">Game Design
+                    <h1>MORE WORKS</h1>
+                </div>
+                <div class="bottom-left">
+                    <a href="" class="caption">Read More</a>
+
+                </div>
             </div>
-            <h5>About the project</h5>
-            <h2>THE OUTSIDE WORLD</h2>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-            <h4>My Contribution</h4>
-            <p>
-                Eu commodo pariatur aliqua consectetur aliquip reprehenderit labore
-                nostrud deserunt. Nostrud officia incididunt adipisicing cupidatat
-                commodo. Nostrud commodo et labore minim cupidatat eu.
-            </p>
-
-            <a href="" class="caption">Read More</a>
-
-            <img class="imgIcon" src="/Intern_Portfolio/Icon/ArrowDown_Grey.png" alt="" />
-            </p>
 
 
 
