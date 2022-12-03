@@ -10,6 +10,12 @@ p {
     font-family: Open Sans, sans-serif;
 }
 
+
+a:hover {
+    background-color: lightskyblue;
+
+}
+
 h5 {
     font-style: italic;
     color: #636E72;
@@ -20,6 +26,7 @@ h5 {
 h4 {
     margin-top: 2em;
 }
+
 
 .imgIcon {
     width: 1.5em;
@@ -68,4 +75,23 @@ a:link {
 
 .textBlack {
     color: black;
+}
+
+.rowPhoto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnPhoto {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.columnPhoto img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }

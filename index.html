@@ -64,11 +64,28 @@
 
 
         }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .columnPhoto {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .columnPhoto {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
     </style>
     <title>Nathan Lee</title>
 </head>
 
 <body>
+
     <!-- Nav Bar -->
     <ul class="nav fixed-bottom flex-column navbar-dark textAlignRight">
         <li class="nav-item">
@@ -77,9 +94,7 @@
         <li class="nav-item">
             <a class="nav-link textBlack" href="#scroll-GameDesign">Game Design</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link textBlack" href="#scroll-WebDesign">Web Design</a>
-        </li>
+
         <li class="nav-item">
             <a class="nav-link textBlack" href="#scroll-UI-Design">UI Design</a>
         </li>
