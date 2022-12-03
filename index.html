@@ -33,13 +33,15 @@
             text-align: left;
         }
 
-        .hidden {
-            display: block;
-            margin: 0%;
-            padding: 0%;
-            overflow-x: hidden;
+        .hiddencontainer {
             height: 100vh;
-            width: 95vw;
+            max-width: 100vw;
+            overflow: hidden;
+
+        }
+
+        .hidden>img {
+            height: 100%;
         }
 
         .display-sm-none {
@@ -79,7 +81,7 @@
             <a class="nav-link textBlack" href="#scroll-WebDesign">Web Design</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link textBlack" href="#scroll-UIDesign">UI Design</a>
+            <a class="nav-link textBlack" href="#scroll-UI-Design">UI Design</a>
         </li>
         <li class="nav-item">
             <a class="nav-link textBlack" href="#scroll-MoreWorks">More Works</a>
@@ -94,72 +96,60 @@
 
 
     <!-- Main Subject -->
-    <div class="container-fluid px-0 title" style="margin-top:em; margin-bottom: 4em">
+    <div class="container-fluid p-0 m-0 title">
         <img src="/TitlePhoto/TitlePhotoNew.jpg" class="img-fluid custom-class display-md-none " alt="..." />
         <img src="/TitlePhoto/TitlePhoto_Mobile.jpg" class="img-fluid display-sm-none " alt="..." />
     </div>
 
 
 
-    <div class="col">
-        <div data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-smooth-scroll="true"
-            class="scrollspy-example" tabindex="0">
-            <!-- Game Design -->
-            <h4 id="scroll-GameDesign"></h4>
-            <div class="containerT" style="margin-bottom: 0em;">
-                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
-                <div class="centered">Game Design
-                    <h1>THE OUTSIDE WORLD</h1>
-                </div>
-                <div class="bottom-left">
-                    <a href="" class="caption">Read More</a>
+    <div class="col m-0 p-0"><a href="/GameDesign.html" style="color: white;">
+            <div data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+                <!-- Game Design -->
+                <h4 id="scroll-GameDesign"></h4>
+                <div class="containerT hiddencontainer" style="margin-bottom: 0em; ;">
+                    <img class="" src="/TOW/TOW_Background_00.jpg" alt="">
+                    <div class="centered">Game Design
+                        <h1>THE OUTSIDE WORLD</h1>
+                    </div>
+        </a>
+    </div>
 
-                </div>
+
+
+    <!-- Web Design --><a href="/GameDesign.html" style="color: white;">
+        <h4 id="scroll-WebDesign"></h4>
+        <div class="containerT hiddencontainer" style="margin-bottom: 0em; ;">
+            <img class="" src="/TOW/TOW_Background_00.jpg" alt="">
+            <div class="centered">Web Design
+                <h1>MY PORTFOLIO</h1>
             </div>
+    </a>
+    </div>
 
-
-
-            <!-- Web Design -->
-            <h4 id="scroll-WebDesign"></h4>
-            <div class="containerT" style="margin-bottom: 0em;">
-                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
-                <div class="centered">Web Design
-                    <h1>MY PORTFOLIO</h1>
-                </div>
-                <div class="bottom-left">
-                    <a href="" class="caption">Read More</a>
-
-                </div>
+    <!-- UI Design --><a href="/GameDesign.html" style="color: white;">
+        <h4 id="scroll-UI-Design"></h4>
+        <div class="containerT hiddencontainer" style="margin-bottom: 0em; ;">
+            <img class="" src="/UI_Design/1920x1080ui_mobile.jpg" alt="">
+            <div class="centered">UI Design
+                <h1>TARCApp</h1>
             </div>
-
-            <!-- UI Design -->
-            <h4 id="scroll-MoreWorks"></h4>
-            <div class="containerT" style="margin-bottom: 0em;">
-                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
-                <div class="centered">UI Design
-                    <h1>TARCApp</h1>
-                </div>
-                <div class="bottom-left">
-                    <a href="" class="caption">Read More</a>
-
-                </div>
+    </a>
+    </div>
+    <!-- More Works -->
+    <h4 id="scroll-MoreWorks"></h4><a href="/GameDesign.html" style="color: white;">
+        <div class="containerT hiddencontainer" style="margin-bottom: 0em; ;">
+            <img class="" src="/TOW/TOW_Background_00.jpg" alt="">
+            <div class="centered">Interested?
+                <h1>More Works</h1>
             </div>
-            <!-- More Works -->
-            <h4 id="scroll-MoreWorks"></h4>
-            <div class="containerT" style="margin-bottom: 0em;">
-                <img class="hidden " src="/TOW/TOW_Background_00.jpg" alt="">
-                <div class="centered">Game Design
-                    <h1>MORE WORKS</h1>
-                </div>
-                <div class="bottom-left">
-                    <a href="" class="caption">Read More</a>
-
-                </div>
-            </div>
+    </a>
+    </div>
 
 
 
-        </div>
+    </div>
     </div>
     </div>
 

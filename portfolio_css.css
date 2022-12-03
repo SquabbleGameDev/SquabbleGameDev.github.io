@@ -1,5 +1,5 @@
 body {
-    background-color: #334076;
+    background-color: white;
 }
 
 h {
@@ -60,4 +60,12 @@ a:link {
     transform: translate(-50%, -50%);
     background-color: red;
     text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.textBlack {
+    color: black;
 }
