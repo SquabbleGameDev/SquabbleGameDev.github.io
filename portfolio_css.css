@@ -95,3 +95,21 @@ a:link {
     vertical-align: middle;
     width: 100%;
 }
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/* Reveal */
+.reveal {
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
