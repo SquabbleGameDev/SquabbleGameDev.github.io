@@ -9,6 +9,11 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="portfolio_css.css" />
     <style>
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
         .columnGamePhoto {
             flex: 50%;
             max-width: 100%;
@@ -23,6 +28,8 @@
         .textboxUI {
             width: 400px;
         }
+
+
 
         /* Responsive layout - makes a two column-layout instead of four columns */
         @media screen and (max-width: 420px) {
@@ -107,13 +114,16 @@
     <!-- UI Design -->
     <!-- Image Grid Responsive -->
     <div class="container mt-5 pt-5">
-        <div class="row pb-3">
+        <div class="row pb-3 fade-in-bottom">
             <div class="col-sm">
                 <img src="/UI_Design/UI_Mockup01.png" alt="" class="columnGamePhoto "></div>
             <div class="col-sm">
-                <div class="row align-items-center d-none d-sm-block" style="; height:40vh;color:white" ;>dsa</div>
+                <div class="row align-items-center d-none d-sm-block" style="height:40vh;color:white" ;>dsa</div>
                 <div class="row align-items-center " style="align-items: center;">
-                    <h1 class="">TARCApp</h1>
+                    <h1 class="">TARCApp <a
+                            href="https://www.figma.com/proto/OtgN91KxtQmrd7HcRm5uza/Squabble_DMLY2S1G7_InterfaceDesign?node-id=502%3A9004&scaling=scale-down&page-id=259%3A2510&starting-point-node-id=502%3A9004&show-proto-sidebar=1';"
+                            target="_blank" style="color:white;"><button type="button" class="btn btn-primary"> Try
+                                Prototype</a></button></h1>
                     <div class="d-none d-sm-block">
                         <!-- <h5 class="ps-4">About the project</h5> -->
                         <p class="ps-4 textboxUI">
@@ -166,21 +176,20 @@
 
 
 
-                <h2>Process</h2>
-                <p style="font-weight:bolder">Competitor Analysis</p>
+                <h1>Process</h1>
+
 
                 <div class="container">
                     <div class="row pb-3">
-                        <div class="col-sm">
-                            <img src="/UI_Design/UI_Mockup01.png" alt="" class="columnGamePhoto "></div>
+
                         <div class="col-sm">
                             <div class="row align-items-center d-none d-sm-block" style=" height:40vh;color:white" ;>
                                 dsa</div>
                             <div class="row align-items-center " style="align-items: center;">
 
                                 <div class="d-none d-sm-block">
-                                    <!-- <h5 class="ps-4">About the project</h5> -->
-                                    <p class="textboxUI">
+                                    <h2>Competitor Analysis</h2>
+                                    <p class="textboxUI ps-4">
                                         In UM Touch it has an excellent interface design and process flow.
                                         For a App aimed at university students, they show good examples in the
                                         operation of the attendance system.
@@ -190,8 +199,8 @@
                                     </p>
                                 </div>
                                 <div class=".d-none d-sm-block d-md-none">
-                                    <!-- <h5 class="ps-4">About the project</h5> -->
-                                    <p class="">
+                                    <h2>Competitor Analysis</h2>
+                                    <p class="ps-4">
                                         In UM Touch it has an excellent interface design and process flow.
                                         For a App aimed at university students, they show good examples in the
                                         operation of the attendance system.
@@ -200,12 +209,99 @@
 
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img src="/UI_Design/competitor analysis.png" alt="" class="columnGamePhoto "></div>
 
-                                <script
-                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                                    crossorigin="anonymous">
-                                </script>
+
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="container" style="text-align: center;">
+                                <h2 class="mt-5 mb-4">Wireframe</h2>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/UI_Design/low-fi.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption " style="background-color:0,0,0.5">
+                                            <h5 class="textBlack">Low Fidelity Wireframes</h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/UI_Design/mid-fi.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption  ">
+                                            <h5 class="textBlack">Mid Fidelity Wireframes</h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/UI_Design/hi-fi.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption">
+                                            <h5 class="textBlack">High Fidelity Wireframes</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev " type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+            </script>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+
+                function reveal() {
+                    var reveals = document.querySelectorAll('.reveal');
+
+                    for (var i = 0; i < reveals.length; i++) {
+
+                        var windowheight = window.innerHeight;
+                        var revealtop = reveals[i].getBoundingClientRect().top;
+                        var revealpoint = 150;
+
+                        if (revealtop < windowheight - revealpoint) {
+                            reveals[i].classList.add('active');
+                        } else {
+                            reveals[i].classList.remove('active');
+                        }
+                    }
+                }
+            </script>
 </body>
 
 </html>
