@@ -154,59 +154,80 @@
             <p>We decided to create animation for storytelling and added voice line into it.</p>
 
 
+            <div class="container">
+              <div class="row pb-3">
 
-            <div class="row pb-3">
-              <div class="col-sm">
-                <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
-              <div class="col-sm">
-                <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
+                <div class="col-sm">
+                  <video controls autoplay loop class="columnGamePhoto">
+                    <source src="/TOW/Animation1.mp4" type="video/mp4">
+                  </video></div>
 
-              <p style="font-weight: bold;">2. Player Navigation<p>
-                  <p>We found out our game instruction is not clear. Access to shortcut key is troublesome.</p>
-                  <p>We decided to put the instruction and shortcutkey in the game scene, so that player know about
-                    them.
-                    The shortcut key can be toggle-on and off up to player's preference.</p>
-                  <div class="container">
-                    <div class="row pb-3">
-                      <div class="col-sm">
-                        <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
-                      <div class="col-sm">
-                        <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
-                    </div>
+                <div class="col-sm">
+                  <video controls autoplay loop class="columnGamePhoto">
+                    <source src="/TOW/Animation2.mp4" type="video/mp4">
+                  </video></div>
 
-                  </div>
+                <div class="reveal">
+                  <p style="font-weight: bold;">2. Player Navigation<p>
+                      <p>We found out our game instruction is not clear. Access to shortcut key is troublesome.</p>
+                      <p>We decided to put the instruction and shortcutkey in the game scene, so that player know about
+                        them.
+                        The shortcut key can be toggle-on and off up to player's preference.</p>
+                      <div class="container">
+                        <div class="row pb-3">
+
+                          <div class="col-sm">
+                            <video controls autoplay loop class="columnGamePhoto">
+                              <source src="/TOW/Mission.mp4" type="video/mp4">
+                            </video></div>
+
+                          <div class="col-sm">
+                            <video controls autoplay loop class="columnGamePhoto">
+                              <source src="/TOW/ShortCut.mp4" type="video/mp4">
+                            </video></div>
+                        </div>
+                        <!-- Image Grid Responsive -->
+                        <!-- <div class="container">
+                        <div class="row pb-3">
+                          <div class="col-sm">
+                            <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
+                          <div class="col-sm">
+                            <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div>
+                        </div> -->
+
+                      </div>
 
 
-            </div>
+                </div>
 
 
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-              crossorigin="anonymous">
-            </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                  crossorigin="anonymous">
+                </script>
 
-            <script type="text/javascript">
-              window.addEventListener('scroll', reveal);
+                <script type="text/javascript">
+                  window.addEventListener('scroll', reveal);
 
-              function reveal() {
-                var reveals = document.querySelectorAll('.reveal');
+                  function reveal() {
+                    var reveals = document.querySelectorAll('.reveal');
 
-                for (var i = 0; i < reveals.length; i++) {
+                    for (var i = 0; i < reveals.length; i++) {
 
-                  var windowheight = window.innerHeight;
-                  var revealtop = reveals[i].getBoundingClientRect().top;
-                  var revealpoint = 150;
+                      var windowheight = window.innerHeight;
+                      var revealtop = reveals[i].getBoundingClientRect().top;
+                      var revealpoint = 150;
 
-                  if (revealtop < windowheight - revealpoint) {
-                    reveals[i].classList.add('active');
-                  } else {
-                    reveals[i].classList.remove('active');
+                      if (revealtop < windowheight - revealpoint) {
+                        reveals[i].classList.add('active');
+                      } else {
+                        reveals[i].classList.remove('active');
+                      }
+                    }
                   }
-                }
-              }
-            </script>
+                </script>
 </body>
 
 </html>
