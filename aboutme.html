@@ -1,187 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-   <title>About Me</title>
-   <link rel="icon" type="image/x-icon" href="Nathan%20Lee%20Logo%20white.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesblog.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="portfolio_css.css" />
     <style>
-        .fade-in-fwd01 {
-            -webkit-animation: fade-in-fwd 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            animation: fade-in-fwd 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         }
 
-        /* heading typeface */
-        h1 {
-            font-family: "Montserrat", sans-serif;
-            font-size: 70px;
-            padding-left: 200px;
-            margin: 20px;
+        .columnGamePhoto {
+            flex: 50%;
+            max-width: 100%;
         }
 
-        h2 {
-            font-family: "Montserrat", sans-serif;
-        }
-
-        /* paragraphy typeface */
-        p {
-            font-size: 30px;
-            font-family: "Open Sans", sans-serif;
-        }
-
-        /* opensans typeface */
-        .opensans {
-            font-family: "Open Sans", sans-serif;
-        }
-
-        /* Fixed sidenav, full height */
-        .sidenav {
-            height: 100%;
-            width: 200px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #9F6D49;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        /* Style the sidenav links and the dropdown button */
-        .sidenav a,
-        .dropdown-btn {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 20px;
-            color: white;
-            display: block;
-            border: none;
-            background: none;
+        .columnGamePhoto img {
+            margin-top: 8px;
+            vertical-align: middle;
             width: 100%;
-            text-align: left;
-            cursor: pointer;
-            outline: none;
         }
 
-        /* On mouse-over */
-        .sidenav a:hover,
-        .dropdown-btn:hover {
-            color: black;
+        .textboxUI {
+            width: 400px;
         }
 
-        /* Main content */
-        .main {
-            margin-left: 200px;
-            /* Same as the width of the sidenav */
-            font-size: 20px;
-            /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
 
-        /* Add an active class to the active dropdown button */
-        .active {
-            background-color: green;
-            color: white;
-        }
 
-        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-        .dropdown-container {
-            display: none;
-            background-color: #262626;
-            padding-left: 8px;
-        }
-
-        /* Optional: Style the caret down icon */
-        .fa-caret-down {
-            float: right;
-            padding-right: 8px;
-        }
-
-        /* Some media queries for responsiveness */
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 420px) {
+            .video {
+                aspect-ratio: 9 / 16;
+                width: 100%;
             }
 
-            .sidenav a {
-                font-size: 18px;
+            .columnGamePhoto {
+                flex: 100%;
+                max-width: 100%;
+            }
+
+            .textboxUI {
+                width: 100vw;
             }
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* padding left space */
-        .paddingleft {
-            padding-left: 18%;
-        }
-
-        .button {
-            border: 3px solid #555555;
-            color: black;
-            padding: 10px 14px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: white;
-            border-radius: 12px
-        }
-
-        .button:hover {
-            border: 3px solid black;
-            color: white;
-            padding: 10px 14px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: black;
-        }
-
-        .dark-mode {
-            background-color: black;
-            color: white;
     </style>
+    <title>Nathan Lee</title>
 </head>
 
 <body>
+    <!-- Nav Bar -->
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">NATHAN LEE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-center text-lg-start text-xl-start text-xxl-start"
+                                aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/GameDesign.html">Game
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="WebDesign.html">Web
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/UIDesign.html">UI
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/PhotographyPortfolio.html">Photography</a>
 
-    <div id="mySidenav" class="sidenav" style="width: 250px">
-        <div></div>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center text-lg-start text-xl-start text-xxl-start"
+                                href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More Works
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                        href="">Videography</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                        href="/PhotographyPortfolio.html">Photography</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                        href="#">2D
+                                        Animation</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
-    <div class="sidenav" style="width: 250px">
-        <a href="indexnew.html"><img src="Nathan%20Lee%20Logo%20white.png" width="250px"></a>
-        <div class="opensans">
-            <ul style="font-size: 15px"><a href="my porfolio2.html">Portfolio</a>
-                <li style="color: white"><a href="photography.html">Photography</a></li>
-                <li style="color: white"><a href="animation.html">Animation</a></li>
-                <li style="color: white"><a href="Illustration.html">Illustration</a></li>
-            </ul>
-            <ul><a href="blog.html">Blog</a></ul>
-            <ul><a href="aboutme.html">About Me</a></ul>
-            <ul><a href="contactme.html">Contact Me</a></ul>
-            <ul style="margin-left: 5.5%"><button class="button" onclick="myFunction()">Dark Mode</button></ul>
-        </div>
-    </div>
+    <!-- UI Design -->
+    <!-- Image Grid Responsive -->
+    <div class="container mt-5 pt-5">
+        <div class="row pb-3 fade-in-bottom">
+            <div class="col-sm">
+                <img src="/AboutMe/portrait_-7.jpg" alt="" class="columnGamePhoto "></div>
+            <div class="col-sm">
+                <div class="row align-items-center d-none d-sm-block" style="height:40vh;color:white" ;>dsa</div>
+                <div class="row align-items-center " style="align-items: center;">
+                    <h1 class="">Nathan <a
+                            href="https://www.figma.com/proto/OtgN91KxtQmrd7HcRm5uza/Squabble_DMLY2S1G7_InterfaceDesign?node-id=502%3A9004&scaling=scale-down&page-id=259%3A2510&starting-point-node-id=502%3A9004&show-proto-sidebar=1';"
+                            target="_blank" style="color:white;"><button type="button" class="btn btn-warning"> Click
+                                Me</a></button></h1>
+                    <div class="d-none d-sm-block">
+                        <!-- <h5 class="ps-4">About the project</h5> -->
+                        <p class="ps-4 textboxUI">
+                            <p style="font-size:150%">Hi! I'm Nathan - a human being with passion in design things. I
+                                enjoy learning things during
+                                my free things. Photography, 3D Modeling, and Sketching, these are in my waiting list! I
+                                always believe that proactive learning is the key to better life. That's why I love
+                                learning!
 
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
+                            </p>
+                    </div>
+                    <div class=".d-none d-sm-block d-md-none">
+                        <!-- <h5 class="ps-4">About the project</h5> -->
+                        <p class="ps-4">
+                            Hi! I'm Nathan - a human being with passion in design things. I enjoy learning things during
+                            my free things. Photography, 3D Modeling, and Sketching, these are in my waiting list! I
+                            always believe that proactive learning is the key to better life. That's why I love
+                            learning!
+                        </p>
+                    </div>
 
-    <h1 style="text-align:center">About Me</h1>
 
-    <div class="paddingleft">
-        <div class="fade-in-fwd01"><img src="AboutMe/About-Me-Profile-Photo.jpg" ; style="width:98%; height:420px ;object-fit:cover">
-        </div>
-    </div>
 
-    <div class="paddingleft">
-        <h2 style="font-size: 50px; margin-bottom: -2%;margin-top: 2%">Hola!</h2>
-        <p style="font-size:150%">I'm Nathan - a web designer with passion and helpful attitude to blend the best of design and customer experience for your brand. </p>
-    </div>
+
+                </div>
+            </div>
+
+            <div class=" container-fluid pt-5 p-0 m-0 title">
+                <img src="" class="img-fluid " alt="..." />
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+            </script>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+
+                function reveal() {
+                    var reveals = document.querySelectorAll('.reveal');
+
+                    for (var i = 0; i < reveals.length; i++) {
+
+                        var windowheight = window.innerHeight;
+                        var revealtop = reveals[i].getBoundingClientRect().top;
+                        var revealpoint = 150;
+
+                        if (revealtop < windowheight - revealpoint) {
+                            reveals[i].classList.add('active');
+                        } else {
+                            reveals[i].classList.remove('active');
+                        }
+                    }
+                }
+            </script>
 </body>
 
 </html>
