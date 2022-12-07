@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="portfolio_css.css" />
+    <style>
+        .fade-in-bottom {
+            -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        .columnGamePhoto {
+            flex: 50%;
+            max-width: 100%;
+        }
+
+        .columnGamePhoto img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .textboxUI {
+            width: 400px;
+        }
+
+        .textAlignMiddle {
+            text-align: left;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 420px) {
+            .video {
+                aspect-ratio: 9 / 16;
+                width: 100%;
+            }
+
+            .columnGamePhoto {
+                flex: 100%;
+                max-width: 100%;
+            }
+
+            .textboxUI {
+                width: 100vw;
+            }
+
+            .textAlignMiddle {
+                text-align: center;
+            }
+        }
+    </style>
+    <title>Nathan Lee</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">NATHAN LEE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/GameDesign.html">Game
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-center text-lg-start text-xl-start text-xxl-start"
+                                href="WebDesign.html">Web
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/UIDesign.html">UI
+                                Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/PhotographyPortfolio.html">Photography</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-lg-start text-xl-start text-xxl-start"
+                                href="/AboutMeNew.html">About
+                                Me</a>
+
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-center text-lg-start text-xl-start text-xxl-start"
+                            href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More Works
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                    href="">Videography</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                    href="/PhotographyPortfolio.html">Photography</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center text-lg-start text-xl-start text-xxl-start"
+                                    href="#">2D
+                                    Animation</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- UI Design -->
+    <!-- Image Grid Responsive -->
+    <div class="container mt-1 pt-5" style="text-align:center">
+
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-sm">
+                    <img src="/3D_Modelling/House_3D.png" alt="" class="columnGamePhoto "></div>
+                <div class="col-sm">
+                    <h1>3D Modeling</h1>
+                    <p> On my way to learn 3D Modelling at the moment.
+                    </p>
+                    <!-- <img src="/ImageGrid/photography (11).jpg" alt="" class="columnGamePhoto "></div> -->
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+            </script>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+
+                function reveal() {
+                    var reveals = document.querySelectorAll('.reveal');
+
+                    for (var i = 0; i < reveals.length; i++) {
+
+                        var windowheight = window.innerHeight;
+                        var revealtop = reveals[i].getBoundingClientRect().top;
+                        var revealpoint = 150;
+
+                        if (revealtop < windowheight - revealpoint) {
+                            reveals[i].classList.add('active');
+                        } else {
+                            reveals[i].classList.remove('active');
+                        }
+                    }
+                }
+            </script>
+</body>
+
+</html>
